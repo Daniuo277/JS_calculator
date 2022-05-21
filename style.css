@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0 0 10px;
+}
+
+#calculator {
+  border: 1px solid black;
+  width: 350px;
+}
+
+#display {
+  width: 350px;
+  height: 80px;
+  margin-bottom: 2.5px;
+  border: 1px solid black;
+}
+
+#calculator .col-5-tab,
+#calculator .col-4-tab {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+  justify-content: center;
+}
+
+.col-5-tab div {
+  margin: 2.5px;
+  width: 20%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.col-4-tab div {
+  line-height: 85.5px;
+  margin: 2.5px;
+  width: 25%;
+  height: 85.5px;
+  text-align: center;
+  border: 1px solid black;
+}

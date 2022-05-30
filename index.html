@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>JavaScript Calculator</h1>
-    <div id="display"></div>
+    <div id="display">0</div>
     <div id="calculator">
       <div class="col-5-tab">
         <div>MC</div>
@@ -28,30 +28,30 @@
         <div>1/x</div>
         <div>x&sup2;</div>
         <div>&radic;x</div>
-        <div>&divide;</div>
+        <div onclick="cOperation(1)">&divide;</div>
       </div>
       <div class="col-4-tab">
         <div onclick="addNumber(7)">7</div>
         <div onclick="addNumber(8)">8</div>
         <div onclick="addNumber(9)">9</div>
-        <div>&times;</div>
+        <div onclick="cOperation(2)">&times;</div>
       </div>
       <div class="col-4-tab">
         <div onclick="addNumber(4)">4</div>
         <div onclick="addNumber(5)">5</div>
         <div onclick="addNumber(6)">6</div>
-        <div>&minus;</div>
+        <div onclick="cOperation(3)">&minus;</div>
       </div>
       <div class="col-4-tab">
         <div onclick="addNumber(1)">1</div>
         <div onclick="addNumber(2)">2</div>
         <div onclick="addNumber(3)">3</div>
-        <div>&plus;</div>
+        <div onclick="cOperation(4)">&plus;</div>
       </div>
       <div class="col-4-tab">
         <div>&plusmn;</div>
         <div onclick="addNumber(0)">0</div>
-        <div>,</div>
+        <div onclick="addNumber(',')">,</div>
         <div>&equals;</div>
       </div>
     </div>

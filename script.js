@@ -57,3 +57,20 @@ function exual() {
   //   main_display.innerHTML = result;
   // }
 }
+
+function changePlus() {
+  main_display.innerHTML = parseFloat(main_display.innerHTML) * -1;
+}
+
+function clearScreen(type) {
+  if (type == 1) {
+    decimal_status = false;
+    number1 = '';
+    number2 = '';
+    hoese = '';
+    main_display.innerHTML = '0';
+  }
+  if (type == 2) {
+    main_display.innerHTML = '0';
+  }
+}

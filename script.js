@@ -16,12 +16,16 @@ function addNumber(number) {
 }
 
 function cOperation(operant) {
-  if (hoese === '') {
+  if (hoese === '' && number1 == '') {
     hoese = operant;
     number1 = parseFloat(main_display.innerHTML);
     console.log(number1);
     main_display.innerHTML = '0';
     decimal_status = false;
+  }
+  if (number1 !== '') {
+    main_display.innerHTML = '0';
+    hoese = operant;
   }
   if (hoese) {
     hoese = operant;
@@ -51,6 +55,10 @@ function exual() {
         break;
     }
     main_display.innerHTML = result;
+    number1 = result;
+    hoese = '';
+    number2 = '';
+    decimal_status = false;
   }
   // if (number1 && number2) {
   //   result = result - parseFloat(main_display.innerHTML);

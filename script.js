@@ -18,13 +18,42 @@ function addNumber(number) {
 function cOperation(operant) {
   if (hoese === '') {
     hoese = operant;
-    number1 = main_display.innerHTML;
+    number1 = parseFloat(main_display.innerHTML);
     console.log(number1);
     main_display.innerHTML = '0';
     decimal_status = false;
   }
   if (hoese) {
     hoese = operant;
-    console.log(hoese);
   }
+}
+
+function exual() {
+  var result = 0;
+  if (number1 && hoese && result == 0) {
+    number2 = parseFloat(main_display.innerHTML);
+    switch (hoese) {
+      case 1:
+        if (parseFloat(number2) == 0) {
+          result = "Can't divide by zero";
+        } else {
+          result = number1 / number2;
+        }
+        break;
+      case 2:
+        result = number1 * number2;
+        break;
+      case 3:
+        result = number1 - number2;
+        break;
+      case 4:
+        result = number1 + number2;
+        break;
+    }
+    main_display.innerHTML = result;
+  }
+  // if (number1 && number2) {
+  //   result = result - parseFloat(main_display.innerHTML);
+  //   main_display.innerHTML = result;
+  // }
 }
